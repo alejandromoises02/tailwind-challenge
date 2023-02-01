@@ -15,9 +15,61 @@
   </head>
 
   <body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <nav
+      class="flex flex-col lg:flex-row px-4 md:px-36 bg-black text-white text-lg font-bold lg:justify-between lg:items-center"
+    >
+      <div class="flex m-0 w-full justify-between items-center h-16">
+        <h1 clas>DBP LEARN</h1>
+        <i id="bar" class="fa-bars not-italic flex lg:hidden"></i>
+      </div>
+      <ul
+        id="menu"
+        class="hidden text-sm font-normal lg:flex lg:text-lg lg:font-bold"
+      >
+        <li class="my-2 lg:my-0 lg:mx-2"><a href="">ABOUT</a></li>
+        <li class="my-2 lg:my-0 lg:mx-2"><a href="">SERVICES</a></li>
+        <li class="my-2 lg:my-0 lg:ml-2"><a href="">CLIENTS</a></li>
+      </ul>
+    </nav>
+
+    <div
+      class="bg-gray-500 flex flex-col items-center justify-center h-64 lg:px-[28%] md:px-36"
+    >
+      <h1 class="text-white text-2xl font-bold">Tailwind Challenge</h1>
+      <p class="text-white text-center">
+        The aim of this challenge is to put into practice how to use Tailwind to
+        creeate a responsive UI. Before addinf custom styles, check the docs to
+        see if those styls can be achieved using a Tailwind class.
+      </p>
+      <div class="flex my-6">
+        <button class="text-white rounded p-2 mx-2 bg-blue-600">
+          Tailwind Docs
+        </button>
+        <button class="bg-gray-100 rounded p-2 mx-2">Cheat Sheet</button>
+      </div>
+    </div>
+
+    <main
+      id="cards-container"
+      class="bg-slate-50 h-full py-8 flex flex-row justify-center flex-wrap"
+    ></main>
+
+    <footer
+      class="flex bg-gray-900 px-4 md:px-36 justify-between items-center h-32"
+    >
+      <p class="text-gray-500">© 2022 Company, Inc</p>
+      <ul class="flex">
+        <li class="mx-2">
+          <i class="fab fa-twitter leading-lg text-lg text-gray-500"></i>
+        </li>
+        <li class="mx-2">
+          <i class="fab fa-instagram leading-lg text-lg text-gray-500"></i>
+        </li>
+        <li class="mx-2">
+          <i class="fab fa-facebook leading-lg text-lg text-gray-500"></i>
+        </li>
+      </ul>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
